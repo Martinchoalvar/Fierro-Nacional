@@ -1,0 +1,66 @@
+@use "variables";
+
+main{
+    .sobre-nosotros {
+        background: #f5f5f5;
+        padding: 50px 20px;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .contenedor-nosotros {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .contenedor-nosotros h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: variables.$celeste;
+    }
+    .contenedor-nosotros h3 {
+        font-size: 1.4rem;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: rgb(124, 170, 201);
+    }
+    .contenedor-nosotros p,
+    .contenedor-nosotros li {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #444;
+    }
+    .contenedor-nosotros ul {
+        padding-left: 0;
+        list-style: none;
+    }
+    .contenedor-nosotros li {
+        margin-bottom: 8px;
+    }
+    .contenedor-nosotros a {
+        color: #0078a8;
+        text-decoration: none;
+        :hover{
+            text-decoration: underline;
+        }
+    }
+    @media (max-width: 600px) {
+        .contenedor-nosotros {
+        padding: 20px;
+        }
+    
+    .contenedor-nosotros h2 {
+        font-size: 1.6rem;
+    }
+    
+    .contenedor-nosotros h3 {
+        font-size: 1.2rem;
+    }
+    .contenedor-nosotros p,
+    .contenedor-nosotros li {
+        font-size: 0.95rem;
+    }
+    }
+}

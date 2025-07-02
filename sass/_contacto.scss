@@ -1,0 +1,49 @@
+@use "variables";
+
+main{
+    .contactoform {
+        display: list-item;
+        max-width: 400px;
+        padding: 0 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+        .contactoform #enviar {
+        background-color: #3b8dbd;
+        color: white;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        gap: 5px;
+        margin: 10px;
+    }
+    #ubicacion{
+        display: list-item;
+        max-width: 400px;
+        padding: 20px 40px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    //boton wsp
+    .whatsapp{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        height: 40px;
+        border-radius: 5px;
+        border-color: black;
+    }
+    .whatsapp:hover{
+        background-color: greenyellow;
+        /* border: 5px solid greenyellow; */
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,52 @@
+@use "variables";
+
+main{
+    .servicio-turno {
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 25px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        font-family: sans-serif;
+    }
+    .servicio-turno h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #222;
+    }
+    .servicio-turno p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #444;
+    }
+    .form-turno {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .form-turno label {
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    .form-turno input,
+    .form-turno select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .form-turno button {
+        padding: 12px;
+        background: #0078a8;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+        :hover{background: #005c84;}
+    }
+}
