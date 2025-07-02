@@ -5,50 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fierro Nacional</title>
     <link rel="shortcut icon" href="../assets/logo2.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Varta:wght@300..700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Varta:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     
     <header>
-        <div id="logomenu"><a href="../index.html">
+        <div class="logomenu"><a href="../index.html">
         <img src="../assets/logo2.png" alt="el logo de fierro nacional" id="logotype"></a>
-        <h1>Fierro Nacional</h1>
+        <h1 id="titulo">Fierro Nacional</h1>
         </div>
     </header>
 
     <main>
-        <div class="bottonespags">
-            <nav class="secciones">
-                <a href="../pages/productos.html"><button>productos</button></a>
-                <a href="../pages/servis.html"><button>servis</button></a>
-                <a href="../pages/contacto.html"><button>contacto</button></a>
-                <a href="../pages/sobre nosotros.html"><button>sobre nosotros</button></a>
-                </nav>
-            </div>
-        <h3>¿quienes somos?</h3>
-        <p>somos una consecionaria en constante crecimiento</p><br>
-        <h3>¿porque elegirnos?</h3>
-        <p>facil, tenemos lols mejores precio calidad del mercado</p><br>
-        <h3>formas de pago</h3>
-        <p>cuotas sin interes, descuento pagando al contado, y creditos con dni</p><br>
-        <h3>ofertas de empleo</h3>
-        <p>_puesto libre como vendedor requisitos:</p>
-        <ul>
-            <li>_mayor de 18</li>
-            <li>_buena predisposicion</li>
-            <li>_disponibilidad full time</li>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">FN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../pages/productos.html">productos</a></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../pages/servis.html">services</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            info
+            </a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pages/contacto.html">contacto</a></li>
+            <li><a class="dropdown-item" href="../pages/sobre nosotros.html">sobre nosotros</a></li>
+            </ul>
+        </li>
         </ul>
-        <p>mandanos tu cv a nuestro email</p><br>
+    </div>
+    </div>
+</nav>
+
+            <section class="sobre-nosotros">
+  <div class="contenedor-nosotros">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos una concesionaria de motos en constante crecimiento, comprometida con brindar calidad, confianza y el mejor servicio del mercado.</p>
+
+    <h3>¿Por qué elegirnos?</h3>
+    <ul>
+      <li>🛵 Mejores precios y calidad garantizada</li>
+      <li>⚙️ Servicio técnico propio</li>
+      <li>📍 Ubicación accesible</li>
+      <li>💬 Asesoramiento personalizado</li>
+    </ul>
+
+    <h3>Formas de pago</h3>
+    <p>💳 Cuotas sin interés, descuentos en efectivo y créditos con DNI.</p>
+
+    <h3>Ofertas de empleo</h3>
+    <p><strong>¡Buscamos vendedor/a!</strong> Requisitos:</p>
+    <ul>
+      <li>✔️ Mayor de 18 años</li>
+      <li>✔️ Buena predisposición</li>
+      <li>✔️ Disponibilidad full-time</li>
+    </ul>
+    <p>Enviá tu CV a: <a href="mailto:empleos@fierro.com">empleos@fierro.com</a></p>
+  </div>
+</section>
         <img src="../assets/whatsapp.png" alt="whatsapp" class="whatsapp">
     </main>
 
     <footer>
-        <img src="../assets/paagosinfondo.png" alt="medios de pago" id="mediopago">
-        <img src="../assets/instagram.png" alt="instagram" class="redes">
-        <img src="../assets/facebook.png" alt="facebook" class="redes">
+        <div class="mediopago"> 
+            <img src="../assets/paagosinfondo.png" alt="medios de pago" >
+        </div>
+        <div class="redes">
+            <img src="../assets/instagram.png" alt="instagram">
+            <img src="../assets/facebook.png" alt="facebook">
+        </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     

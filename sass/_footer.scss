@@ -1,0 +1,16 @@
+@use "variables";
+
+footer{
+    background-color: variables.$negro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .redes img{
+        height: 15vh;
+        width: auto;
+    }
+    .mediopago img{
+        height: 15vh;
+        width: auto;
+    }
+}

@@ -1,0 +1,29 @@
+@use "variables";
+
+header{
+    .logomenu{
+        display: flex;
+        align-items: center;
+        background-color: variables.$negro;
+    }
+    #titulo {
+    color: #e0e0e0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8vh;
+    text-align: center; 
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: bajar 1s ease-out forwards;
+    }
+    @keyframes bajar {
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    #logotype{
+        height: 20vh;
+    }
+}
+
+
